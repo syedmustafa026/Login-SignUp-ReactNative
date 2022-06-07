@@ -28,7 +28,9 @@ function Home({ navigation }) {
             <TouchableOpacity style={style.buttonFilled} onPress={() => LogOut()}>
               <Text style={{ fontSize: 18, fontWeight: 'bold', color: 'white' }}>Log Out</Text>
             </TouchableOpacity>
-
+            <TouchableOpacity style={style.buttonOutlined} onPress={() => navigation.navigate('Maps')}>
+              <Text style={{ fontSize: 18, fontWeight: 'bold', color: '#08bfaf' }}>Go to Maps</Text>
+            </TouchableOpacity>
           </View>
         </View>
       </KeyboardAvoidingView>

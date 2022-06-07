@@ -8,8 +8,6 @@ import { setName, setEmail, setPassword } from '../redux/actions'
 import AsyncStorage from '@react-native-async-storage/async-storage'
 function Signin({ navigation }) {
   const [hidePass, setHidePass] = useState(true);
-  // const [email, setEmail] = useState('')
-  // const [password, setPassword] = useState('')
   const { email, password } = useSelector(state => state.userReducer)
   const dispatch = useDispatch()
 
