@@ -5,7 +5,6 @@ const initialState = {
     email: '',
     password: ''
 }
-
 function userReducer(state = initialState, action) {
     switch (action.type) {
         case SET_USER_NAME:
@@ -18,6 +17,4 @@ function userReducer(state = initialState, action) {
             return state;
     }
 }
-
-
 export default userReducer;
